@@ -6,6 +6,7 @@ body{
   padding: 0;
 }
 
+
 .main-pg{
   --tw-bg-opacity : 1;
   background-color: rgb(243 244 246/var(--tw-bg-opacity));
@@ -24,13 +25,19 @@ body{
 #fairfieldCP{
   font-weight: 800;
   font-size: 7rem;
-  line-height: 0;
+
+
+  display: inline;
+  line-height: 5rem;;
 }
 
 #cpDescription{
   font-weight: 500;
   font-size: 2rem;
-  
+
+  line-height: 3rem;
+
+
 
   margin-block-start: 1em;
   margin-block-end: 1em;

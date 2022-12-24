@@ -74,3 +74,41 @@ body{
   height: 0.2px;
 }
 /* About Us */
+
+#about-title-1{
+  margin: auto;
+  margin-top: 5rem;
+
+
+  padding-top: 5rem;
+  font-size: 4.5rem;
+}
+
+#about-desc-1{
+  font-size: 1.75rem;
+  line-height: 2rem;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81/var(--tw-text-opacity));
+  display: block;
+
+  margin-block-start: 1em;
+}
+
+#block-1{
+  padding-left: 10%;
+  width: 35%;
+  text-align: left;
+}
+
+/* Text EXT */
+
+#highlight{
+  background-color: #FACC13;
+  border-radius: 0.5rem;
+}
+
+#bold{
+  color: black;
+  font-weight: 900;
+}
