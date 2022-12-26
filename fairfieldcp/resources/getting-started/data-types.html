@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Data Types | Fairfield CP</title>
+		<link type="text/css" rel="stylesheet" href="learn-page.css">
+		<link href="https://i.imgur.com/9iOzoi6.png" rel="shortcut icon">
+	</head>
+    <section id="body">
+        <div id="side-panel">
+            <a href="/dashboard/" id="nav-dashboard"><img id ="nav-img" src="https://i.imgur.com/bJtpUr4.png"></a>
+            <a id="nav-dashboard" href="dashboard">Fairfield CP</a>
+            <p id="panel-header">Getting Started</p>
+            <div id="mid-panel">
+                <a href="file:///C:/Users/astellato/Desktop/fairfieldcp/resources/getting-started/what-is-cp.html">
+                    <p id="option-1">Introduction to Competitive Programming</p>
+                </a>
+                <a href="file:///C:/Users/astellato/Desktop/fairfieldcp/resources/getting-started/data-types.html">
+                    <p id="option-2">Data Types</p>
+                </a>
+                <a href="file:///C:/Users/astellato/Desktop/fairfieldcp/resources/getting-started/input-output.html">
+                    <p id="option-2">Input Output</p>
+                </a>
+            </div>
+        </div>
+        <div id="main-panel">
+            <h1 id="doc-title">Data Types</h1>
+            <p id="author">Author: Alexander Stellato</p>
+            <p id="doc-sum">Overview of the basic data types needed for competitive programming.</p>
+
+            <hr id="break">
+            <h1 id="header">Common Primitive Data Types</h1>
+
+            <table id="table">
+                <tr>
+                    <td><p id="italics_bold">Types</p></td>
+                    <td><p id="code_bold">int</p></td>
+                    <td><p id="code_bold">long</p></td>
+                    <td><p id="code_bold">double</p></td>
+                    <td><p id="code_bold">boolean</p></td>
+                    <td><p id="code_bold">char</p></td>
+                </tr>
+                <tr>
+                    <td><p id="table-content">Description</p></td>
+                    <td><p id="table-content">32-bit integer</p></td>
+                    <td><p id="table-content">64-bit integer</p></td>
+                    <td><p id="table-content">Double-precision float</p></td>
+                    <td><p id="table-content">True/False value</p></td>
+                    <td><p id="table-content">16-bit Unicode character</p></td>
+                </tr>
+                <tr>
+                    <td><p id="table-content">Size (bytes)</td>
+                    <td><p id="table-content">4</p></td>
+                    <td><p id="table-content">8</p></td>
+                    <td><p id="table-content">8</p></td>
+                    <td><p id="table-content">1 bit(*)</p></td>
+                    <td><p id="table-content">2</p></td>
+                </tr>
+                <tr>
+                    <td><p id="table-content">Range</p></td>
+                    <td><p id="table-content">-2^31 to 2^31 - 1</p></td>
+                    <td><p id="table-content">-2^63 to 2^63 - 1</p></td>
+                    <td><p id="table-content">-1.7E+308 to +1.7E+308</p></td>
+                    <td><p id="table-content">true / false</p></td>
+                    <td><p id="table-content">\u0000to \uffff (0-65535)</p></td>
+                </tr>
+            </table>
+            <p id="paragraph">*Note: It's unlikely that booleans will actually use only 1 bit of memory, as in most cases data types must be aligned to bytes. However, only one bit of information can be stored in them.</p>
+            <p id="paragraph">There are several main data types that are used in contests: integers, floating point numbers, booleans, characters, and strings. Assuming that you are familiar with the language you are using, this should be mostly review.</p> 
+            <p id="paragraph">The normal <a id="bold">32-bit integer</a> data type (<a id="code">int</a> in C++ and Java) supports values between <a id="bold">-2,147,483,648</a> and <a id="bold">2,147,483,647</a>.</p>
+            <p id="paragraph">Some problems require you to use <a id="bold">64-bit integers</a> (<a id="code">long long</a> in C++ and <a id="code">long</a> in Java) instead of 32-bit integers (<a id="code">int</a>). 4-bit integers are lesslikely to have overflow issues, since they can store any number between <a id="bold">−9,223,372,036,854,775,808</a> and <a id="bold">9,223,372,036,854,775,807</a>. In Python, <a id="code-link" href="https://docs.python.org/3.4/library/stdtypes.html#numeric-types-int-float-complex" target="_blank">int</a>s have unlimited size.</p>
+            <p id="paragraph">Contest problems are usually set such that the 64-bit integer is sufficient, so for lower divisions it might be a good idea to use 64-bit integers in place of 32-bit integers everywhere. Of course, you shouldn't do this when time and/or memory limits are tight, which may be the case in higher divisions of Fairfield CP. Also note that in Java, you will need to cast<a id="code">long</a> back into <a id="code">int</a> when accesing array indices.</p>
+            <p id="paragraph">Additionally, there exist 16-bit integers (<a id="code">short</a> in C++ and Java). However, these are generally not useful as the extra memory saved by using them is usually negligible. Unsigned integers (<a id="code">unsigned int</a>, <a id="code">unsigned long long</a>, etc.) also exist. They aren't used as frequently, though the 2-fold increase in size is sometimes the difference between overflowing and not overflowing.</p>
+            <p id="paragraph"><a id="bold">Floating point numbers</a> are used to store decimal values. It is important to know that floating point numbers are not exact, because the binary architecture of computers can only store decimals to a certain precision. Hence, we should always expect that floating point numbers are slightly off, so it's generally a bad idea to compare two floating-point numbers for exact equality (<a id="code">==</a>).</p>
+            <p id="paragraph"><a id="bold">Boolean</a> variables have two possible states: <a id="code">true</a> and <a id="code">false</a>. We'll usually use booleans to mark whether a certain process is done, and arrays of booleans to mark which components of an algorithm have finished. Booleans require 1 byte (8 bits) of storage, not 1 bit, wasting the other 7 bits of storage. To use less memory, one can use bitsets (<a id="code">std::bitset</a> in C++ / <a id="code"c>BitSet</a> in Java). Unfortunately, bitsets are not available in Python.</p>
+            <p id="paragraph"><a id="bold">Character</a> variables represent a single character. They are returned when you access the character at a certain index within a string. Characters are represented using the ASCII standard, which assigns each character to a corresponding integer. This allows us to do arithmetic with them; for example, both <a id="code">cout << ('f' - 'a');</a> in C++ and <a id="code">System.out.print('f' - 'a');</a> in Java will print <a id="code">5</a>. In Java, characters are 16 bits, while in C/C++, characters are 8 bits.</p>
+            <p id="paragraph"><a id="bold">Strings</a> are effectively arrays of characters. You can easily access the character at a certain index and take substrings of the string (<a id="code">charAt()</a> and <a id="code">substring()</a> in Java).</p>
+        </div>
+    </section>
+</html>

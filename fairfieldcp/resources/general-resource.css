@@ -1,0 +1,65 @@
+#top-section{
+    width: auto;
+    text-align: center;
+    color: white;
+}
+
+#general-title{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-left: 1rem;
+}
+
+#general-description{
+    font-size: 1.2rem;
+    width: 50%;
+    margin: auto;
+}
+
+#body{
+    background-color: #2039FF;
+    margin-top: -3%;
+}
+
+#module{
+    
+    display: inline-block;
+
+    background-color: white;
+
+    border-color: white;
+    border-style: solid;
+    border-radius: 1rem;
+
+    text-align: center;
+    color: rgb(31 41 55);
+
+    margin-top: 2%;
+    margin-left: 10%;
+    width: 20%;
+    margin-bottom: 2.8%;
+}
+
+#sub-txt{
+    color : rgb(75 85 99);
+}
+
+#bronze{
+    color : rgb(154 52 18);
+}
+
+#silver{
+    color : rgb(15 118 110);
+}
+
+#gold{
+    color : rgb(161 98 7);
+}
+
+#platinum{
+    color : rgb(126 34 206);
+}
+
+#advanced{
+    color: rgb(21 128 61);
+}

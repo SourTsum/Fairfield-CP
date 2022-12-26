@@ -1,0 +1,112 @@
+/* About Us */
+
+#about-title{
+  margin: auto;
+  margin-top: 1rem;
+
+
+  padding-top: 5rem;
+  font-size: 4.5rem;
+}
+
+#about-desc{
+  font-size: 1.75rem;
+  line-height: 2rem;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81/var(--tw-text-opacity));
+  display: block;
+
+  margin-block-start: 1em;
+}
+
+#block{
+  padding-left: 10%;
+  width: 35%;
+  text-align: left;
+}
+
+
+/* Contacts */
+
+#authors{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246/var(--tw-bg-opacity));
+}
+
+#authors-title{
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81/var(--tw-text-opacity));
+  font-weight: 800;
+  font-size: 3rem;
+  text-align: center;
+  
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  
+}
+
+
+#astellato{
+  border-style: solid;
+  color: #4b5563;
+  height: 15rem;
+  width: 40%;
+  margin-left: 5%;
+  border-radius: 1rem;
+  border-color: #e5e7eb;
+}
+
+
+#astellato-desc{
+  display: inline-block;
+  float: left;
+  text-align: left;
+  margin-left : 35%;
+  width: 60%;
+  margin-top: 5%;
+}
+
+#astellato-pfp{
+  display: inline-block;
+  float: left;
+  margin-top: 5%;
+  margin-inline-start: -55%;
+
+  height: 150px;
+  width: 150px;
+  border-radius: 9rem;
+  border-color: white;
+}
+
+
+
+#astellato-title{
+  width: 90%;
+}
+
+#email-btn{
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+}
+
+#git-btn{
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+}
+
+
+
+/* Text EXT */
+
+#highlight{
+  background-color: #FACC13;
+  border-radius: 0.5rem;
+}
+
+#bold{
+  color: black;
+  font-weight: 900;
+}
